@@ -2,37 +2,37 @@ const galleryItems = [
   {
     title: "Sunset Ridge",
     category: "Nature / Landscapes",
-    src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
+    src: "assets/photos/sunset-ridge.svg",
     alt: "Warm sunset over layered mountain landscape",
   },
   {
     title: "After Rain",
     category: "Street / Everyday",
-    src: "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=80",
+    src: "assets/photos/after-rain.svg",
     alt: "City street with reflections after rain",
   },
   {
     title: "Gate Horizon",
     category: "Travel / Spaces",
-    src: "https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?auto=format&fit=crop&w=1200&q=80",
+    src: "assets/photos/gate-horizon.svg",
     alt: "Airport terminal interior with broad windows",
   },
   {
     title: "Quiet Geometry",
     category: "Architecture / Interiors",
-    src: "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=1000&q=80",
+    src: "assets/photos/quiet-geometry.svg",
     alt: "Minimal interior architecture with clean lines",
   },
   {
     title: "Forest Air",
     category: "Nature / Landscapes",
-    src: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80",
+    src: "assets/photos/forest-air.svg",
     alt: "Trees lit by soft morning light",
   },
   {
     title: "Passing Light",
     category: "Travel / Spaces",
-    src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
+    src: "assets/photos/passing-light.svg",
     alt: "Landscape with sun rays over distant hills",
   },
 ];
