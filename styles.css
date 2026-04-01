@@ -292,26 +292,53 @@ h2 { font-size: clamp(1.8rem, 2.7vw, 3rem); }
 
 .services-wrap {
   display: grid;
-  gap: 1.6rem;
-  align-items: center;
-  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.4rem;
 }
 
-.service-chips {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 0.7rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.services-intro {
+  max-width: 66ch;
 }
 
-.service-chips li {
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 0.55rem 0.8rem;
+.services-intro p {
   color: var(--muted);
-  text-align: center;
+}
+
+.services-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.service-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.3rem 1rem;
+  padding: 0.95rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--line), transparent 15%);
+}
+
+.service-item h3 {
+  margin: 0;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: 1.35rem;
+}
+
+.service-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.service-price {
+  color: var(--text) !important;
+  font-size: 0.92rem;
+  justify-self: end;
+}
+
+.services-note {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .contact-grid {
@@ -398,6 +425,15 @@ h2 { font-size: clamp(1.8rem, 2.7vw, 3rem); }
     padding: 0.7rem;
     display: none;
     flex-direction: column;
+  }
+
+  .service-item {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .service-price {
+    justify-self: start;
   }
 
   .primary-nav.is-open { display: flex; }
