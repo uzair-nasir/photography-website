@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Photography portfolio of Uzair Nasir — a minimal, cinematic showcase focused on light, atmosphere, and detail."
+    />
+    <title>Uzair Nasir — Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top">Uzair Nasir <span>shotbyuzair_</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Photography by Uzair Nasir</p>
+            <h1>Frames, light, and detail.</h1>
+            <p class="supporting-line">A growing visual portfolio shaped by calm composition and atmosphere.</p>
+            <div class="cta-row">
+              <a class="btn btn-solid" href="#work">View Work</a>
+              <a class="btn btn-outline" href="#contact">Contact</a>
+            </div>
+          </div>
+          <figure class="hero-image-wrap" aria-label="Featured hero photographs">
+            <div class="hero-rotator" id="hero-rotator"></div>
+            <div class="hero-dots" id="hero-dots" aria-label="Hero image selector"></div>
+          </figure>
+        </div>
+      </section>
+
+      <section id="work" class="section work-section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Selected Work</p>
+            <h2>A curated selection built to grow over time.</h2>
+            <p class="currently-exploring">Currently exploring evening light, quiet spaces, clean framing, and atmosphere.</p>
+          </div>
+
+                    <div class="category-row" role="tablist" aria-label="Gallery categories"></div>
+
+          <div class="gallery-grid" id="gallery-grid"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="container about-layout">
+          <figure class="about-portrait-frame">
+            <img
+              src="uzair-nasir-headshot.png"
+              alt="Portrait of Uzair Nasir"
+              loading="lazy"
+            />
+          </figure>
+          <div class="about-copy">
+            <p class="eyebrow">About</p>
+            <h2>Personal work, built with intention.</h2>
+            <p>
+              I’m Uzair Nasir, a high school student building a photography portfolio focused on composition,
+              lighting, atmosphere, and visual detail. I’m interested in creating images that feel clean,
+              thoughtful, and memorable, and I’m continuing to grow that style with every shoot.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section services-section">
+        <div class="container services-wrap">
+          <div class="services-intro">
+            <p class="eyebrow">Services</p>
+            <h2>Select shoots, kept simple.</h2>
+            <p>I’m currently building my portfolio and taking a limited number of select shoots.</p>
+          </div>
+
+          <div class="services-list" aria-label="Photography services and starter pricing">
+            <article class="service-item">
+              <h3>Portraits</h3>
+              <p>30–45 minutes · edited selects</p>
+              <p class="service-price">Starting at $40–$60</p>
+            </article>
+            <article class="service-item">
+              <h3>Cars</h3>
+              <p>30–45 minutes · edited selects</p>
+              <p class="service-price">Starting at $50–$75</p>
+            </article>
+            <article class="service-item">
+              <h3>Events / Coverage</h3>
+              <p>Custom pricing</p>
+              <p class="service-price">Inquire for details</p>
+            </article>
+          </div>
+
+          <p class="services-note">If you have something specific in mind, feel free to reach out for a custom shoot.</p>
+          <a class="services-cta" href="mailto:uzairnasir1412@gmail.com">Ask About a Shoot</a>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-wrap">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s connect.</h2>
+          </div>
+          <div class="contact-grid">
+            <a href="mailto:uzairnasir1412@gmail.com">uzairnasir1412@gmail.com</a>
+            <a href="https://www.instagram.com/shotbyuzair_/" target="_blank" rel="noreferrer">@shotbyuzair_</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Uzair Nasir</p>
+      </div>
+    </footer>
+
+    <dialog id="lightbox" class="lightbox" aria-label="Expanded photo view">
+      <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+      <img id="lightbox-image" alt="Expanded gallery photo" />
+      <p id="lightbox-caption"></p>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
