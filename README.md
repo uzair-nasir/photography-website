@@ -27,6 +27,9 @@ Add files under `assets/photos/` and point `src` to those local files.
 ## Contact details
 Update email and social links in the Contact section of `index.html`.
 
+## Portrait image
+Place your portrait file at project root as `uzair-nasir-headshot.png` (used in the About section).
+
 ## Vercel deployment checklist
 1. Ensure this commit is on your production branch (`main` by default).
 2. In Vercel project settings, set Framework Preset to **Other**.
