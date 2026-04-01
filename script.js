@@ -37,10 +37,7 @@ const galleryItems = [
   },
 ];
 
-const futureCategories = ["Future Portraits", "Future Car Photography"];
-const allCategories = [
-  ...new Set([...galleryItems.map((item) => item.category), ...futureCategories]),
-];
+const allCategories = [...new Set(galleryItems.map((item) => item.category))];
 
 const categoryRow = document.querySelector(".category-row");
 const grid = document.getElementById("gallery-grid");

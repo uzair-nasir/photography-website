@@ -25,7 +25,7 @@ Edit `galleryItems` in `script.js`:
 Add files under `assets/photos/` and point `src` to those local files.
 
 ## Contact details
-Update email and social links in the Contact section of `index.html`.
+Current contact links are set to `uzairnasir1412@gmail.com` and `@shotbyuzair_` (Instagram).
 
 ## Portrait image
 Place your portrait file at project root as `uzair-nasir-headshot.png` (used in the About section).
