@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Photography portfolio of Uzair Nasir — a minimal, cinematic showcase focused on light, atmosphere, and detail."
+    />
+    <title>Uzair Nasir — Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top">Uzair Nasir <span>shotbyuzair_</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+          <a href="gallery.html">Gallery</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Photography by Uzair Nasir</p>
+            <h1>Frames, light, and detail.</h1>
+            <p class="supporting-line">A growing visual portfolio shaped by calm composition and atmosphere.</p>
+            <div class="cta-row">
+              <a class="btn btn-solid" href="#work">View Work</a>
+              <a class="btn btn-outline" href="#contact">Contact</a>
+            </div>
+          </div>
+          <figure class="hero-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1400&q=80"
+              alt="Mountain horizon at sunset with cinematic tones"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="work" class="section work-section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Selected Work</p>
+            <h2>A curated selection built to grow over time.</h2>
+          </div>
+
+          <div class="category-row" role="tablist" aria-label="Gallery categories"></div>
+
+          <div class="gallery-grid" id="gallery-grid"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="container split-panel">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>Personal work, built with intention.</h2>
+          </div>
+          <p>
+            I’m Uzair Nasir, and I’m building a photography portfolio centered on composition, lighting,
+            atmosphere, and visual detail. I’m especially interested in images that feel clean, intentional,
+            and memorable, and I’m continuing to refine that direction with every shoot.
+          </p>
+        </div>
+      </section>
+
+      <section id="services" class="section services-section">
+        <div class="container services-wrap">
+          <div>
+            <p class="eyebrow">Work With Me</p>
+            <h2>Open to future creative opportunities.</h2>
+            <p>
+              I’m currently focused on building my portfolio, but I may be open to future creative work,
+              collaborations, and photography opportunities.
+            </p>
+          </div>
+          <ul class="service-chips" aria-label="Potential future service areas">
+            <li>Portraits</li>
+            <li>Cars</li>
+            <li>Events</li>
+            <li>Creative Shoots</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-wrap">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s connect.</h2>
+          </div>
+          <div class="contact-grid">
+            <a href="mailto:uzair@example.com">uzair@example.com</a>
+            <a href="https://instagram.com/shotbyuzair_" target="_blank" rel="noreferrer">@shotbyuzair_</a>
+            <a href="https://linkedin.com/in/uzairnasir" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Uzair Nasir</p>
+      </div>
+    </footer>
+
+    <dialog id="lightbox" class="lightbox" aria-label="Expanded photo view">
+      <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+      <img id="lightbox-image" alt="Expanded gallery photo" />
+      <p id="lightbox-caption"></p>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
